@@ -1,0 +1,13 @@
+# If you're a robot: go away!
+User-agent: *
+Disallow: /
+
+User-agent: AdsBot-Google
+Disallow: /
+
+User-Agent: Googlebot-Image
+Disallow: /
+
+# Just to be safe
+User-agent: Googlebot
+Disallow: /

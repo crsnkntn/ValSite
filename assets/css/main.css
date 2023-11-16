@@ -217,6 +217,15 @@ input, select, textarea {
 			border-bottom: 0;
 		}
 
+		h1 b {
+			border-bottom: 0;
+			font-family: "Raleway", Helvetica, sans-serif;
+			font-size: 1.1em;
+			font-weight: 900;
+			letter-spacing: 0.25em;
+			text-transform: uppercase;
+		}
+
 	h2 {
 		font-size: 1.1em;
 	}
@@ -1886,6 +1895,10 @@ input, select, textarea {
 		white-space: nowrap;
 	}
 
+	input[type="submit"] {
+		margin-top: 0.8em;
+	}
+
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
@@ -2053,6 +2066,7 @@ input, select, textarea {
 		padding: 0 1em;
 		text-decoration: none;
 		width: 100%;
+		margin-bottom: 15px;
 	}
 
 		input[type="text"]:invalid,
@@ -3195,6 +3209,20 @@ input, select, textarea {
 					text-transform: uppercase;
 				}
 
+				#header .links ul li b {
+					border-bottom: 0;
+					font-family: "Raleway", Helvetica, sans-serif;
+					font-size: 1.1em;
+					font-weight: 900;
+					letter-spacing: 0.25em;
+					text-transform: uppercase;
+				}
+
+				#header .links ul li a.icon.brands.fa-linkedin {
+					font-size: 2em;
+					vertical-align: middle; /* Adjust as needed */
+				}
+
 		#header .main {
 			height: inherit;
 			line-height: inherit;
@@ -3260,6 +3288,7 @@ input, select, textarea {
 			#header form input {
 				display: inline-block;
 				height: 2.5em;
+				margin-bottom: 0.2em;
 				position: relative;
 				top: -2px;
 				vertical-align: middle;
@@ -3599,3 +3628,38 @@ input, select, textarea {
 			}
 
 		}
+
+.twin-pdf-view {
+	display: flex;
+	justify-content: center; /* Center the images */
+	gap: 20px; /* Adds space between the images */
+}
+
+.pdf-container {
+	position: relative;
+	width: calc(50% - 10px); /* Adjust for the gap */
+}
+
+.pdf-container img {
+	width: 100%; /* Full width of its container */
+	height: auto; /* Maintain aspect ratio */
+}
+
+.download-btn {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: none;
+	padding: 5px 10px;
+	background-color: #3c3b3b !important;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.pdf-container:hover .download-btn {
+	display: block;
+}
+		
+		
+		
