@@ -2,12 +2,9 @@
 User-agent: *
 Disallow: /
 
-User-agent: AdsBot-Google
-Disallow: /
-
-User-Agent: Googlebot-Image
-Disallow: /
-
 # Just to be safe
 User-agent: Googlebot
+Allow: /
+
+User-agent: AdsBot-Google
 Disallow: /

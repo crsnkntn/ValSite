@@ -2348,6 +2348,19 @@ input, select, textarea {
 				width: 100%;
 			}
 
+			.image.featured.row {
+				display: flex; /* Sets the container to a flexbox */
+				justify-content: center; /* Center the images horizontally */
+				align-items: center; /* Align the images vertically */
+				flex-wrap: nowrap; /* Prevents wrapping, so all images are in one line */
+				margin: 0 auto; /* Centers the container */
+			}
+			
+			.image.featured.row img {
+				width: 29%; /* Adjust width as needed */
+				margin-right: 10px; /* Adds a little space between the images */
+			}
+
 			@media screen and (max-width: 736px) {
 
 				.image.featured {
@@ -3643,6 +3656,7 @@ input, select, textarea {
 .pdf-container img {
 	width: 100%; /* Full width of its container */
 	height: auto; /* Maintain aspect ratio */
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
 .download-btn {
