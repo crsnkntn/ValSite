@@ -3675,5 +3675,85 @@ input, select, textarea {
 	display: block;
 }
 		
-		
-		
+.post header {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+}
+
+.view-selector {
+    display: flex;
+    margin-top: 10px;
+	margin-bottom: 10px;
+	font-weight: 900;
+	font-size: 1.5em;
+}
+
+.tab {
+    padding: 10px;
+    cursor: pointer;
+	color: #6b6b6b;
+}
+
+.tab.right {
+	margin-left: 10px;
+}
+
+
+.tab.left {
+	padding-right: 20px;
+}
+
+/* Active tab style */
+.tab.active {
+    background-color: none;
+	color: #3c3b3b;
+}
+
+/* Inactive tab style */
+.tab:not(.active):hover {
+	color: #6b6b6b;
+}
+
+/* Vertical line between tabs */
+#pictures-tab {
+    border-right: 1px solid #ccc;
+}
+
+.post .content-view {
+    display: none; /* Initially hidden */
+}
+
+.post .content-view.active {
+    display: block; /* Show the active view */
+	color: blueviolet;
+}
+
+/* Image Grid */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap as needed */
+}
+
+.image-grid img {
+    flex: 1 1 200px; /* Adjust the basis as needed */
+    width: 42%;
+    height: auto;
+    object-fit: cover; /* This makes images cover the area without distorting aspect ratio */
+}
+
+.image-grid .pdf-container {
+	position: relative;
+	width: calc(50% - 10px); /* Adjust for the gap */
+}
+
+.image-grid .pdf-container img {
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: auto;
+}
+
+.image-grid .pdf-container:hover .download-btn {
+	display: block;
+}
